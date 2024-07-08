@@ -236,6 +236,9 @@ function Dashboard() {
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem("userdata")) || users;
         setUsersData(data);
+        if (!JSON.parse(localStorage.getItem("userdata"))) {
+            localStorage.setItem("userdata", JSON.stringify(users));
+        }
     }, []);
 
     return (
