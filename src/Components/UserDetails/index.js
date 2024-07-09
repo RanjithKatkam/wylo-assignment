@@ -80,7 +80,7 @@ export default function UserDetails(params) {
                     <div className="profile-pic-container">
                         <img src={userData.photo} alt={userData.name} />
                         <div className="profile-inner">
-                            <h1>{userData.name}</h1>
+                            {editBtn ? "" : <h1>{userData.name}</h1>}
                             {editBtn ? (
                                 <>
                                     <label for="role">Role</label>
@@ -113,7 +113,7 @@ export default function UserDetails(params) {
                                     defaultValue={userData.email}
                                 />
                             ) : (
-                                <h3>{userData.email}</h3>
+                                <h3 className="email1">{userData.email}</h3>
                             )}
                         </div>
                     </div>
@@ -122,7 +122,7 @@ export default function UserDetails(params) {
                             <p>DOB</p>
                             {editBtn ? (
                                 <input
-                                    className="input"
+                                    className="input media3"
                                     onChange={handleChange}
                                     value={dob}
                                     name="dob"
@@ -154,7 +154,7 @@ export default function UserDetails(params) {
                         <p>Location</p>
                         {editBtn ? (
                             <input
-                                className="input"
+                                className="input media2"
                                 onChange={handleChange}
                                 value={location}
                                 name="location"
@@ -162,14 +162,14 @@ export default function UserDetails(params) {
                                 defaultValue={userData.location}
                             />
                         ) : (
-                            <h3>{userData.location}</h3>
+                            <h3 className="media-location">{userData.location}</h3>
                         )}
                     </div>
                     <div className="inner1 div1">
                         <p>Skills</p>
                         {editBtn ? (
                             <input
-                                className="input"
+                                className="input media2"
                                 onChange={handleChange}
                                 value={skills}
                                 name="skills"
@@ -177,7 +177,7 @@ export default function UserDetails(params) {
                                 defaultValue={userData.skills}
                             />
                         ) : (
-                            <h3>{userData.skills}</h3>
+                            <h3 className="media-location">{userData.skills}</h3>
                         )}
                     </div>
                     {editBtn ? (

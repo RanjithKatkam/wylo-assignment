@@ -125,3 +125,92 @@
 .save-btn {
     margin-top: 20px;
 }
+
+@media (max-width: 720px) {
+    .app {
+        height: 94vh !important;
+    }
+
+    .user-details-container {
+        align-items: flex-start;
+    }
+
+    .details {
+        width: 90%;
+        height: 80%;
+        margin-top: 10%;
+    }
+
+    .profile-pic-container {
+        height: 35%;
+    }
+
+    .profile-pic-container img {
+        height: 50%;
+    }
+
+    .profile-inner h1 {
+        font-size: 22px;
+    }
+
+    .profile-inner h2 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .profile-inner h3 {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .inner1 {
+        width: 30%;
+    }
+
+    .inner1 p {
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .inner1 h3 {
+        font-size: 15px;
+    }
+
+    .email1 {
+        font-size: 13px !important;
+    }
+
+    .media-location {
+        width: 200px;
+    }
+
+    .edit-btn {
+        margin-top: 10%;
+    }
+
+    .save-btn {
+        margin-top: 5%;
+    }
+
+    .profile-inner input {
+        width: 190px;
+        height: 30px;
+        border-radius: 6px;
+    }
+
+    .inner1 input {
+        width: 170px;
+        height: 40px;
+        border-radius: 6px;
+    }
+
+    .media2 {
+        width: 230px !important;
+        height: 40px !important;
+    }
+
+    .media3 {
+        width: 130px !important;
+    }
+}

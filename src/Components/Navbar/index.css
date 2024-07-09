@@ -6,12 +6,15 @@
     align-items: center;
 }
 
-.header h1 {
+.title {
     margin-left: 6%;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     letter-spacing: 6px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 900;
+    text-decoration: none;
+    color: #222222;
+    letter-spacing: 2px;
 }
 
 .header img {
@@ -36,4 +39,11 @@
 .a {
     text-decoration: none;
     margin-right: 6%;
+}
+
+@media (max-width: 720px) {
+    .add-user-button {
+        width: 85px;
+        font-size: 12px;
+    }
 }
